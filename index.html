@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Survey Rendering Demo</title>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="index.js"></script>
+        <script src="demo/mockService.js"></script>
+        <script src="demo/category/category.directive.js"></script>
+        <script src="demo/branch/branch.js"></script>
+    </head>
+    <body ng-app="demo" ng-controller="demoController as $ctrl">
+        <div class="container">
+            <div class="jumbotron">
+                <h1> Survey Rendering Demo </h1>
+                <p>Chris Rocco</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <branch survey="surveyOne" answers="qs1"></branch>
+                </div>
+                <div class="col-md-6">
+                    <branch survey="surveyTwo" answers="qs2"></branch>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

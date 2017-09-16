@@ -1,0 +1,20 @@
+{
+  "name": "survery-demo",
+  "version": "1.0.0",
+  "description": "Demoing survery rendering strategy for Research Coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "uab",
+    "research",
+    "data",
+    "bigdata"
+  ],
+  "author": "Chris Rocco",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}

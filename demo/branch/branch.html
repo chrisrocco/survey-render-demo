@@ -1,0 +1,31 @@
+<div class="branch">
+    <div>
+        <h3>EDIT QUESTION SET</h3>
+        <div class="input-group">
+            <input type="text" class="form-control" ng-model="ans">
+            <span class="input-group-btn">
+                <button class="btn btn-secondary" ng-click="addAns(ans)" type="button">Add Question!</button>
+              </span>
+        </div>
+        <br/>
+        <table class="table">
+            <tbody>
+            <tr ng-repeat="(key, val) in answers">
+                <td>
+                    {{key}}
+                </td>
+                <td>
+                    <a href ng-click="removeAns(key)">x</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr/>
+    <div>
+        <h3>BRANCH</h3>
+        <ol>
+            <category node="survey" manager="manager"></category>
+        </ol>
+    </div>
+</div>

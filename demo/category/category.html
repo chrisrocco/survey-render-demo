@@ -1,0 +1,15 @@
+<li>
+    <p>{{node.id}}</p>
+    <ul>
+        <li ng-repeat="(key, value) in node.questions"
+            ng-if="manager.isQuestionAlive(value)">
+            {{value.id}}
+        </li>
+    </ul>
+    <ol>
+        <category ng-repeat="(key, value) in node.children"
+                  ng-if="manager.isCategoryAlive(value)"
+                  manager="manager"
+                  node="value"></category>
+    </ol>
+</li>
